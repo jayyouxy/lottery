@@ -1,0 +1,72 @@
+.lotteryouter {
+    text-align: center;
+    margin: 10vw 0;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.lotteryouter input {
+    height: 30px;
+    font-size: 20px;
+    color:aliceblue;
+    background-color: #000;
+    border: none;
+    border-bottom: solid #757575 1px;
+    outline:none;
+}
+
+.check {
+    display: none;
+    max-width: 800px;
+    margin: 10vh auto 20vh auto;
+    border: solid #1255B5 1px;
+}
+
+.not {
+    display: none;
+    max-width: 800px;
+    margin: 10vh auto 20vh auto;
+    border: solid #1255B5 1px;
+}
+
+.loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:aqua;
+    letter-spacing: 0.2em;
+    display: none;
+    
+    &::before, &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: aquamarine;
+      position: absolute;
+      animation: load .7s infinite alternate ease-in-out;
+    }
+    
+    &::before {
+      top: 0;
+    }
+    
+    &::after {
+      bottom: 0;
+    }
+  }
+  
+  @keyframes load {
+    0% { left: 0; height: 30px; width: 15px }
+    50% { height: 8px; width: 40px }
+    100% { left: 235px; height: 30px; width: 15px}
+  }
