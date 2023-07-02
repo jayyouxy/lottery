@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #000000;
+    color: #fff
+}
+
+@media (min-width:800px) {
+    .pclist {
+        display: flex;
+        justify-content: space-between;
+        width: 60vw
+    }
+
+    #pcsearchicond7,
+    .pcshoplist,
+    #pcshopicond7 {
+        display: block
+    }
+
+    .pcfooter {
+        display: grid
+    }
+
+    #yxgicon,
+    #pcsearchicond7 {
+        margin: 2rem
+    }
+
+    .molist,
+    #mosearchicond7,
+    #menuicond7,
+    .moshoplist,
+    #moshopicond7,
+    .mofooter {
+        display: none;
+    }
+
+    .topnav {
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width:800px) {
+    #menuicond7 {
+        display: block;
+        position: relative;
+    }
+
+    #mosearchicond7,
+    .moshoplist,
+    #moshopicond7 {
+        display: block
+    }
+
+    .mofooter {
+        display: grid
+    }
+
+    .pclist a,
+    #pcsearchicond7,
+    .pcsearch,
+    .pcshoplist,
+    #pcshopicond7,
+    .pcfooter {
+        display: none
+    }
+
+    .pclist {
+        min-width: 60vw
+    }
+
+    .topnav {
+        justify-content: space-between;
+    }
+}
+
+.ads {
+    background-color: #151516;
+    color: #fff;
+    font-weight: 100;
+    height: 40px;
+    display: grid;
+    align-items: center;
+}
+
+#yxgicon {
+    height: 2rem;
+}
+
+#pcsearchicond7,
+#mosearchicond7,
+#pcshopicond7,
+#moshopicond7,
+#menuicond7,
+#search2 {
+    height: 1.5rem
+}
+
+.topnav a:link,
+.topnav a:visited {
+    color: #d7d7d7;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.topnav a:hover,
+.topnav a:active {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 999;
+}
+
+.molist a {
+    text-decoration: none;
+    color: #323232;
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.searchtext {
+    font-size: 25px;
+    width: 60vw;
+    outline: none;
+    border: none;
+    background-color: #151516;
+    color:#fff
+}
+
+.molist {
+    list-style-type: none;
+    line-height: 1.5rem;
+    padding-left: 8vw;
+    background-color: #000000;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.molistopen {
+    list-style-type: none;
+    line-height: 1.5rem;
+    padding-left: 8vw;
+    background-color: #000000;
+    position: fixed;
+    top: 40px;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.pcsearch {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 3
+}
+
+.pcsearchopen {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+    z-index: 3
+}
+
+.mosearch {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.mosearchopen {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.pcshoplist {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.pcshoplistopen {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.moshoplist {
+    background-color: #151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.moshoplistopen {
+    background-color:#151516;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+.pcsearch a:link,
+.pcsearch a:visited,
+.mosearch a:link,
+.mosearch a:visited,
+.pcfooter a:link,
+.pcfooter a:visited,
+.mofooter a:link,
+.mofooter a:visited {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-weight: 100;
+}
+.pcsearch a:hover,
+.pcsearch a:active,
+.mofooter a:hover,
+.mofooter a:active,
+.pcfooter a:hover,
+.pcfooter a:active,
+.mofooter a:hover,
+.mofooter a:active {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.pcfooter hr,
+.mofooter hr {
+    height: 0.1px;
+    border: none;
+    background-color: #c0c0c0
+}
+
+.pcfooter p {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.mofooter span {
+    color: #ffffff
+}
+
+.pcbottomnav div {
+    margin: 10px 0;
+    width: 200px;
+    line-height: 35px;
+}
+
+.mobottomnav div {
+    line-height: 35px
+}
+
+.mobottomnav a {
+    padding-left: 1rem
+}
+
+.f {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pcfooter {
+    justify-content: center;
+    padding: 4vw;
+    grid-template-columns: minmax(800px, 1500px);
+}
+
+.mofooter {
+    justify-content: center;
+    padding: 4vw;
+    grid-template-columns: minmax(200px, 800px);
+}
+
+.mobottomlist {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlistopen {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist2 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist2open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist3 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist3open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist4 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist4open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist5 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist5open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist6 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist6open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.download {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: solid #7d7d7d 1px;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+}
