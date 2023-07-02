@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地下城居住资格抽签</title>
+    <link rel="stylesheet" href="../backblack.css">
+    <link rel="stylesheet" href="lottery.css">
+    <script defer src="lottery.js"></script>
+</head>
+
+<body>
+    <div class="ads">
+        <广告>
+    </div>
+    <div class="topnav">
+        <div class="save"></div>
+        <a href="../index.html" style="display:grid;align-items: center;"><img id="yxgicon" src="../img/yxg.png"></a>
+        <div class="pclist">
+            <a href="../yx_community.html">Y X 社区</a>
+            <a href="../yx_client.html">YXG 客户端</a>
+            <a href="../yx_wiki.html">Y X 联合维基</a>
+            <a href="../yx_webtv.html">YXG Web TV</a>
+            <a href="../yx_support.html">YXG 支持</a>
+            <a href="../yx_about.html">关于我们</a>
+        </div>
+        <img id="pcsearchicond7" src="../img/searchd7.png">
+        <img id="mosearchicond7" src="../img/searchd7.png">
+        <img id="pcshopicond7" src="../img/shopd7.png">
+        <img id="moshopicond7" src="../img/shopd7.png">
+        <img id="menuicond7" src="../img/menud7.png">
+        <div class="save"></div>
+    </div>
+    <div class="molist" style="height:100%">
+        <li><a href="yx_community.html">Y X 社区</a></li>
+        <li><a href="yx_client.html">YXG 客户端</a></li>
+        <li><a href="yx_wiki.html">Y X 联合维基</a></li>
+        <li><a href="yx_webtv.html">YXG Web TV</a></li>
+        <li><a href="yx_support.html">YXG 支持</a></li>
+        <li><a href="yx_about.html">关于我们</a></li>
+    </div>
+    <div class="pcsearch">
+        <div style="display: flex;align-items: center;padding:2vh 0 0 6vh">
+            <img id="search2" src="../img/search2.png" style="margin-left:0;margin-right: 10px;">
+            <input class="searchtext" type="text" placeholder="搜索 yxg.com">
+        </div>
+        <div style="font-weight: 600;line-height: 40px;padding:2vh 0 2vh 6vh">
+            <a href="" style="font-weight: 100;">快速链接</a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;查找商店</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;专业版</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;查找....</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;查找....</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;以旧换新</div>
+            </a>
+        </div>
+    </div>
+    <div class="mosearch" style="height:100%">
+        <div style="display: flex;align-items: center;padding:2vh 0 0 4vh">
+            <img id="search2" src="../img/search2.png" style="margin-left:0;margin-right: 10px;">
+            <input type="text" placeholder="搜索 yxg.com" style="font-size: 25px;width:60vw;outline:none;border:none">
+        </div>
+        <div style="font-weight: 600;line-height: 40px;padding:2vh 0 2vh 4vh">
+            <a href="" style="font-weight: 100;">快速链接</a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;查找商店</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;专业版</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;查找....</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;查找....</div>
+            </a>
+            <a href="">
+                <div>&#x21AC;&nbsp;&nbsp;以旧换新</div>
+            </a>
+        </div>
+    </div>
+    <div class="pcshoplist">
+        <div style="font-weight: 600;font-size: 40px;padding: 6vw;">您的包是空的。</div>
+        <div style="padding:0 0 4vh 6vw;color:#757575">登录以查看是否有任何已保存的项目</div>
+    </div>
+    <div class="moshoplist" style="height:100%">
+        <div style="font-weight: 600;font-size: 40px;padding: 6vw;">您的包是空的。</div>
+        <div style="padding:0 0 4vh 6vw;color:#757575">登录以查看是否有任何已保存的项目</div>
+    </div>
+    <!--导航栏结束-->
+    <a href="../yx_client.html" style="text-decoration: none;color:#fff">
+        <div class="download">
+            <h2>前往下载客户端</h2>
+        </div>
+    </a>
+    <div style="background-color: #151516;padding:20px;text-align: center;">
+        <p>请前往客户端抽签以保存数据。<a href="../yx_client.html" style="text-decoration: none;color:rgb(56, 150, 237)">详情...
+                &#8250;</a></p>
+    </div>
+    <div class="lotteryouter">
+        <div><input type="text" placeholder="姓名" id="name"></div>
+        <div><input type="text" placeholder="性别" id="gender"></div>
+        <div><input type="text" placeholder="年龄" id="age"></div>
+        <div><input type="text" placeholder="电话号码" id="number"></div>
+        <h1 id="btn" style="color:#ffffffbb;padding:0 10px;margin-top: 20px;">模拟抽签</h1>
+    </div>
+    <div class="loader">Loading...</div>
+
+    <div class="check">
+        <div>
+            <img src="yxgwhite.png" style="height:65px;margin:5px 0 0 10px">
+        </div>
+        <div style="position: relative;top:15px">
+            <div style="background-color: #1255B5;margin:0 20px;padding:5px 20px;text-align: center;">PERSONAL PROFILE OF
+                GLOBAL SORTITION PROROCOL</div>
+        </div>
+        <div style="background-color: #a5caff47;padding:35px 10px 20px 10px">
+            <div>地下城居住许可证编码：</div>
+            <div id="code" style="color:#1255B5"></div>
+            <div>姓名：<span id="name2"></span></div>
+            <div>性别：<span id="gender2"></span></div>
+            <div>年龄：<span id="age2"></span></div>
+            <div>电话号码：<span id="number2"></span></div>
+            <div>地下城：<span id="duncity"></span></div>
+        </div>
+        <div style="text-align: center;margin:20px 0">
+            <h1>您已获得地下城入住资格</h1>
+            <span>YOU ARE QUALIFIED TO ENTER THE UNDERGROUND CITY</span>
+        </div>
+        <div style="background-color: #1255B5;padding:10px;text-align: center;">
+            <h3>详细入住方式等待进一步通知</h3>
+            <span>DETAILS OF HOW TO GET TO THE UNDERGROUND CITY WILL HAVE TO WAIT FOR FURTHER NOTICE</span>
+        </div>
+    </div>
+    <div class="not">
+        <div>
+            <img src="yxgwhite.png" style="height:65px;margin:5px 0 0 10px">
+        </div>
+        <div style="position: relative;top:15px">
+            <div style="background-color: #1255B5;margin:0 20px;padding:5px 20px;text-align: center;">PERSONAL PROFILE OF
+                GLOBAL SORTITION PROROCOL</div>
+        </div>
+        <div style="background-color: #a5caff47;padding:35px 10px 20px 10px">
+            <div>姓名：<span id="name3"></span></div>
+            <div>性别：<span id="gender3"></span></div>
+            <div>年龄：<span id="age3"></span></div>
+            <div>电话号码：<span id="number3"></span></div>
+        </div>
+        <div style="text-align: center;margin:20px 0">
+            <h1>您未中签</h1>
+            <span>NOT SELECTED</span>
+        </div>
+        <div style="background-color: #1255B5;padding:10px;text-align: center;">更多信息请参阅：https//yxgov.top/</div>
+        </div>
+        <div id="copy" style="text-align: center;margin:10px 0;display: none;">&copy; YXG 2023 保留一切最终解释权力</div>
+</body>
+
+</html>
